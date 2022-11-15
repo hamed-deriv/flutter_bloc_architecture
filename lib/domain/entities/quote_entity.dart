@@ -11,6 +11,8 @@ class QuoteEntity {
         show: json['show'],
       );
 
+  factory QuoteEntity.empty() => QuoteEntity(quote: '', role: '', show: '');
+
   final String quote;
   final String role;
   final String show;
